@@ -44,13 +44,44 @@ El proyecto debe permitir navegar el catálogo, seleccionar productos y visualiz
 |       |-- in_cart.html         # Template for products in cart
 |   |-- venv/                    # Python virtual environment (auto-created)
 |   |-- purchases.json           # File for storing purchase history
-|-- src/                         # React source code
-|   |-- components/              # React components
-|   |   |-- ProductCatalog.jsx   # Product listing and filtering component
-|   |   |-- ShoppingCart.jsx     # Shopping cart component
+|-- src/                         # React source code (Atomic Design Architecture)
+|   |-- components/              # React components organized by Atomic Design
+|   |   |-- atoms/               # Basic building blocks
+|   |   |   |-- CartItemImage.jsx
+|   |   |   |-- CartItemPrice.jsx
+|   |   |   |-- CartItemTotal.jsx
+|   |   |   |-- CartQuantityControl.jsx
+|   |   |   |-- PriceDisplay.jsx
+|   |   |   |-- ProductImage.jsx
+|   |   |   |-- ProductTag.jsx
+|   |   |   |-- QuantityInput.jsx
+|   |   |-- molecules/           # Simple combinations of atoms
+|   |   |   |-- CartItemActions.jsx
+|   |   |   |-- CartItemInfo.jsx
+|   |   |   |-- FilterControls.jsx
+|   |   |   |-- ProductActions.jsx
+|   |   |   |-- ProductInfo.jsx
+|   |   |-- organisms/           # Complex UI components
+|   |   |   |-- CartItem.jsx
+|   |   |   |-- ProductCard.jsx
+|   |   |   |-- ProductModal.jsx
+|   |   |-- pages/               # Page-level components
+|   |   |   |-- ProductCatalogPage.jsx
+|   |   |   |-- ShoppingCartPage.jsx
+|   |   |-- index.js             # Component exports
+|   |-- hooks/                   # Custom React hooks
+|   |   |-- useCartContext.jsx   # Cart state management
+|   |   |-- useFilters.js        # Filter logic
+|   |   |-- useProducts.js       # Products data management
+|   |   |-- useTheme.js          # Theme management
+|   |   |-- index.js             # Hook exports
+|   |-- utils/                   # Utility functions
+|   |   |-- formatters.js        # Currency and data formatting
+|   |   |-- index.js             # Utility exports
+|   |-- config/                  # Configuration files
+|   |   |-- colors.js            # Color palette and theme config
 |   |-- MainApp.jsx              # Main React component
-|   |-- main.js                  # React entry point
-|   |-- styles.css               # React-specific styles
+|   |-- main.jsx                 # React entry point
 |-- static/                      # Directory for compiled React build
 |   |-- index.html               # Main HTML file
 |   |-- js/                      # Compiled JavaScript
@@ -175,9 +206,13 @@ La aplicación estará disponible en: **http://localhost:3002**
 - **Resumen de compra** con totales y fechas
 
 ### ✅ Características Adicionales
+- **Arquitectura Atomic Design** para componentes escalables y reutilizables
+- **Hooks personalizados** para lógica de negocio encapsulada
+- **Context API** para gestión global del estado del carrito
 - **Notificaciones toast** para feedback inmediato
 - **Accesibilidad** con navegación por teclado
 - **SEO optimizado** con meta tags apropiados
+- **Configuración centralizada** de colores y temas
 
 ## 🎨 Diseño y UX
 
@@ -205,15 +240,53 @@ La aplicación estará disponible en: **http://localhost:3002**
 - **Imágenes adaptativas** con object-fit
 - **Navegación optimizada** para touch
 
+## 🏗️ Arquitectura Atomic Design
+
+El proyecto implementa la metodología **Atomic Design** para crear una arquitectura de componentes escalable y mantenible:
+
+### **Atoms (Átomos)**
+Componentes básicos y reutilizables:
+- `QuantityInput` - Input numérico para cantidades
+- `PriceDisplay` - Visualización de precios con formato
+- `ProductImage` - Imagen de producto con configuración
+- `ProductTag` - Etiqueta de categoría con colores
+- `CartQuantityControl` - Control de cantidad para carrito
+- `CartItemImage`, `CartItemPrice`, `CartItemTotal` - Elementos de carrito
+
+### **Molecules (Moléculas)**
+Combinaciones simples de átomos:
+- `ProductInfo` - Información completa del producto
+- `ProductActions` - Botones de acción del producto
+- `FilterControls` - Controles de filtrado avanzados
+- `CartItemInfo` - Información del item del carrito
+- `CartItemActions` - Acciones del item del carrito
+
+### **Organisms (Organismos)**
+Componentes complejos de UI:
+- `ProductCard` - Tarjeta completa de producto
+- `ProductModal` - Modal de detalles del producto
+- `CartItem` - Item completo del carrito
+
+### **Pages (Páginas)**
+Componentes de nivel de página:
+- `ProductCatalogPage` - Página del catálogo de productos
+- `ShoppingCartPage` - Página del carrito de compras
+
+### **Hooks Personalizados**
+Lógica reutilizable encapsulada:
+- `useCartContext` - Gestión del estado del carrito
+- `useProducts` - Manejo de datos de productos
+- `useFilters` - Lógica de filtrado
+- `useTheme` - Gestión del tema
+
 ## 🔧 Tecnologías Utilizadas
 
 ### Frontend
 - **React 18** con hooks y componentes funcionales
 - **Vite** para build optimizado y desarrollo rápido
-- **Bootstrap 5** para componentes UI y responsive design
-- **Font Awesome 6** para iconografía
+- **Ant Design** para componentes UI y responsive design
 - **CSS3** con variables CSS y animaciones
-- **Ant Design** Responsive y uso de componentes de aplicación
+- **Atomic Design** para arquitectura de componentes escalable
 
 ### Backend
 - **Flask 2.3.3** como framework web
@@ -255,9 +328,12 @@ La aplicación implementa requisitos no funcionales según la norma **ISO 25010*
 - Headers de seguridad apropiados
 
 ### ✅ Mantenibilidad
-- Código modular y bien organizado
-- Separación clara de responsabilidades
-- Documentación completa
+- **Arquitectura Atomic Design** con componentes modulares y reutilizables
+- **Separación clara de responsabilidades** entre átomos, moléculas, organismos y páginas
+- **Hooks personalizados** para lógica de negocio encapsulada
+- **Context API** para gestión centralizada del estado
+- **Configuración centralizada** de colores y temas
+- **Documentación completa** de componentes y funcionalidades
 
 Ver documentación completa en: [REQUISITOS_NO_FUNCIONALES.md](REQUISITOS_NO_FUNCIONALES.md)
 
@@ -270,6 +346,28 @@ La aplicación incluye simulación de fallos de red para probar la resiliencia:
 - **Latencia simulada** de 0.1-0.5 segundos
 - **Mensajes de error informativos** con opciones de reintento
 - **Estados de carga** para feedback visual
+
+## 🚀 Ventajas de la Arquitectura Atomic Design
+
+### **Escalabilidad**
+- **Componentes reutilizables** que pueden combinarse de múltiples formas
+- **Fácil adición de nuevas funcionalidades** sin afectar componentes existentes
+- **Patrones consistentes** que facilitan el desarrollo en equipo
+
+### **Mantenibilidad**
+- **Separación clara de responsabilidades** entre niveles de componentes
+- **Lógica encapsulada** en hooks personalizados
+- **Configuración centralizada** que facilita cambios globales
+
+### **Reutilización**
+- **Atoms** pueden usarse en múltiples contextos
+- **Molecules** combinan átomos de forma consistente
+- **Organisms** crean componentes complejos reutilizables
+
+### **Testing**
+- **Componentes pequeños** son más fáciles de testear
+- **Lógica aislada** en hooks facilita testing unitario
+- **Interfaces claras** entre componentes
 
 ## 🚀 Despliegue
 
