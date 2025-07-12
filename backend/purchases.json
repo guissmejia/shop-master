@@ -1,0 +1,597 @@
+[
+  {
+    "id": 1,
+    "timestamp": "2025-07-11T10:46:30.351954",
+    "items": [
+      {
+        "category": "Laptops",
+        "description": "Potente laptop con chip M3 Pro, 18GB RAM, 512GB SSD. Perfecta para desarrollo y diseño profesional. Pantalla Liquid Retina XDR de 14 pulgadas.",
+        "id": 1,
+        "image": "https://images.unsplash.com/photo-1517336714731-489689fd1ca8?w=400&h=300&fit=crop",
+        "name": "MacBook Pro 14\" M3 Pro",
+        "price": 2499.99,
+        "specs": {
+          "battery": "Hasta 22 horas",
+          "display": "14\" Liquid Retina XDR",
+          "processor": "Apple M3 Pro",
+          "ram": "18GB",
+          "storage": "512GB SSD"
+        },
+        "quantity": 4
+      }
+    ],
+    "total": 9999.96
+  },
+  {
+    "id": 2,
+    "timestamp": "2025-07-11T10:55:34.245818",
+    "items": [
+      {
+        "category": "Smartphones",
+        "description": "El iPhone más avanzado con chip A17 Pro, cámara de 48MP, y diseño en titanio. Incluye Dynamic Island y carga inalámbrica.",
+        "id": 2,
+        "image": "https://images.unsplash.com/photo-1592750475338-74b7b21085ab?w=400&h=300&fit=crop",
+        "name": "iPhone 15 Pro Max",
+        "price": 1199.99,
+        "specs": {
+          "camera": "48MP Triple Camera",
+          "display": "6.7\" Super Retina XDR",
+          "processor": "Apple A17 Pro",
+          "ram": "8GB",
+          "storage": "256GB"
+        },
+        "quantity": 3
+      },
+      {
+        "category": "Audio",
+        "description": "Auriculares inalámbricos premium con cancelación de ruido líder en la industria. 30 horas de batería y sonido Hi-Res Audio.",
+        "id": 3,
+        "image": "https://images.unsplash.com/photo-1505740420928-5e560c06d30e?w=400&h=300&fit=crop",
+        "name": "Sony WH-1000XM5",
+        "price": 399.99,
+        "specs": {
+          "battery": "30 horas",
+          "connectivity": "Bluetooth 5.2",
+          "noise_cancellation": "Adaptive NC",
+          "type": "Over-ear",
+          "weight": "250g"
+        },
+        "quantity": 2
+      }
+    ],
+    "total": 4399.950000000001
+  },
+  {
+    "id": 3,
+    "timestamp": "2025-07-11T14:31:42.493729",
+    "items": [
+      {
+        "category": "Laptops",
+        "description": "Potente laptop con chip M3 Pro, 18GB RAM, 512GB SSD. Perfecta para desarrollo y diseño profesional. Pantalla Liquid Retina XDR de 14 pulgadas.",
+        "id": 1,
+        "image": "https://images.unsplash.com/photo-1517336714731-489689fd1ca8?w=400&h=300&fit=crop",
+        "name": "MacBook Pro 14\" M3 Pro",
+        "price": 2499.99,
+        "specs": {
+          "battery": "Hasta 22 horas",
+          "display": "14\" Liquid Retina XDR",
+          "processor": "Apple M3 Pro",
+          "ram": "18GB",
+          "storage": "512GB SSD"
+        },
+        "quantity": 1
+      },
+      {
+        "category": "Smartphones",
+        "description": "El iPhone más avanzado con chip A17 Pro, cámara de 48MP, y diseño en titanio. Incluye Dynamic Island y carga inalámbrica.",
+        "id": 2,
+        "image": "https://images.unsplash.com/photo-1592750475338-74b7b21085ab?w=400&h=300&fit=crop",
+        "name": "iPhone 15 Pro Max",
+        "price": 1199.99,
+        "specs": {
+          "camera": "48MP Triple Camera",
+          "display": "6.7\" Super Retina XDR",
+          "processor": "Apple A17 Pro",
+          "ram": "8GB",
+          "storage": "256GB"
+        },
+        "quantity": 1
+      }
+    ],
+    "total": 3699.9799999999996
+  },
+  {
+    "id": 4,
+    "timestamp": "2025-07-11T14:31:54.244504",
+    "items": [
+      {
+        "category": "Smartphones",
+        "description": "El iPhone más avanzado con chip A17 Pro, cámara de 48MP, y diseño en titanio. Incluye Dynamic Island y carga inalámbrica.",
+        "id": 2,
+        "image": "https://images.unsplash.com/photo-1592750475338-74b7b21085ab?w=400&h=300&fit=crop",
+        "name": "iPhone 15 Pro Max",
+        "price": 1199.99,
+        "specs": {
+          "camera": "48MP Triple Camera",
+          "display": "6.7\" Super Retina XDR",
+          "processor": "Apple A17 Pro",
+          "ram": "8GB",
+          "storage": "256GB"
+        },
+        "quantity": 1
+      }
+    ],
+    "total": 1199.99
+  },
+  {
+    "id": 5,
+    "timestamp": "2025-07-11T14:34:18.945248",
+    "items": [
+      {
+        "category": "Smartphones",
+        "description": "El iPhone más avanzado con chip A17 Pro, cámara de 48MP, y diseño en titanio. Incluye Dynamic Island y carga inalámbrica.",
+        "id": 2,
+        "image": "https://images.unsplash.com/photo-1592750475338-74b7b21085ab?w=400&h=300&fit=crop",
+        "name": "iPhone 15 Pro Max",
+        "price": 1199.99,
+        "specs": {
+          "camera": "48MP Triple Camera",
+          "display": "6.7\" Super Retina XDR",
+          "processor": "Apple A17 Pro",
+          "ram": "8GB",
+          "storage": "256GB"
+        },
+        "quantity": 1
+      }
+    ],
+    "total": 1199.99
+  },
+  {
+    "id": 6,
+    "timestamp": "2025-07-11T14:42:40.887419",
+    "items": [
+      {
+        "category": "Drones",
+        "description": "Drone compacto con cámara de 4K, peso inferior a 250g, y hasta 34 minutos de vuelo. Perfecto para fotografía aérea.",
+        "id": 10,
+        "image": "https://images.unsplash.com/photo-1579829366248-204fe8413f31?w=400&h=300&fit=crop",
+        "name": "DJI Mini 3 Pro",
+        "price": 759.99,
+        "specs": {
+          "camera": "4K/60fps",
+          "flight_time": "34 minutos",
+          "range": "12km",
+          "weight": "<250g",
+          "wind_resistance": "Nivel 5"
+        },
+        "quantity": 1
+      }
+    ],
+    "total": 759.99
+  },
+  {
+    "id": 7,
+    "timestamp": "2025-07-11T14:43:37.202803",
+    "items": [
+      {
+        "category": "Smartphones",
+        "description": "El iPhone más avanzado con chip A17 Pro, cámara de 48MP, y diseño en titanio. Incluye Dynamic Island y carga inalámbrica.",
+        "id": 2,
+        "image": "https://images.unsplash.com/photo-1592750475338-74b7b21085ab?w=400&h=300&fit=crop",
+        "name": "iPhone 15 Pro Max",
+        "price": 1199.99,
+        "specs": {
+          "camera": "48MP Triple Camera",
+          "display": "6.7\" Super Retina XDR",
+          "processor": "Apple A17 Pro",
+          "ram": "8GB",
+          "storage": "256GB"
+        },
+        "quantity": 1
+      }
+    ],
+    "total": 1199.99
+  },
+  {
+    "id": 8,
+    "timestamp": "2025-07-11T14:49:46.555161",
+    "items": [
+      {
+        "category": "Drones",
+        "description": "Drone compacto con cámara de 4K, peso inferior a 250g, y hasta 34 minutos de vuelo. Perfecto para fotografía aérea.",
+        "id": 10,
+        "image": "https://images.unsplash.com/photo-1579829366248-204fe8413f31?w=400&h=300&fit=crop",
+        "name": "DJI Mini 3 Pro",
+        "price": 759.99,
+        "specs": {
+          "camera": "4K/60fps",
+          "flight_time": "34 minutos",
+          "range": "12km",
+          "weight": "<250g",
+          "wind_resistance": "Nivel 5"
+        },
+        "quantity": 1
+      }
+    ],
+    "total": 759.99
+  },
+  {
+    "id": 9,
+    "timestamp": "2025-07-11T14:49:56.949225",
+    "items": [
+      {
+        "category": "Smartphones",
+        "description": "El iPhone más avanzado con chip A17 Pro, cámara de 48MP, y diseño en titanio. Incluye Dynamic Island y carga inalámbrica.",
+        "id": 2,
+        "image": "https://images.unsplash.com/photo-1592750475338-74b7b21085ab?w=400&h=300&fit=crop",
+        "name": "iPhone 15 Pro Max",
+        "price": 1199.99,
+        "specs": {
+          "camera": "48MP Triple Camera",
+          "display": "6.7\" Super Retina XDR",
+          "processor": "Apple A17 Pro",
+          "ram": "8GB",
+          "storage": "256GB"
+        },
+        "quantity": 1
+      },
+      {
+        "category": "Audio",
+        "description": "Auriculares inalámbricos premium con cancelación de ruido líder en la industria. 30 horas de batería y sonido Hi-Res Audio.",
+        "id": 3,
+        "image": "https://images.unsplash.com/photo-1505740420928-5e560c06d30e?w=400&h=300&fit=crop",
+        "name": "Sony WH-1000XM5",
+        "price": 399.99,
+        "specs": {
+          "battery": "30 horas",
+          "connectivity": "Bluetooth 5.2",
+          "noise_cancellation": "Adaptive NC",
+          "type": "Over-ear",
+          "weight": "250g"
+        },
+        "quantity": 1
+      }
+    ],
+    "total": 1599.98
+  },
+  {
+    "id": 10,
+    "timestamp": "2025-07-11T14:52:22.708725",
+    "items": [
+      {
+        "category": "Laptops",
+        "description": "Potente laptop con chip M3 Pro, 18GB RAM, 512GB SSD. Perfecta para desarrollo y diseño profesional. Pantalla Liquid Retina XDR de 14 pulgadas.",
+        "id": 1,
+        "image": "https://images.unsplash.com/photo-1517336714731-489689fd1ca8?w=400&h=300&fit=crop",
+        "name": "MacBook Pro 14\" M3 Pro",
+        "price": 2499.99,
+        "specs": {
+          "battery": "Hasta 22 horas",
+          "display": "14\" Liquid Retina XDR",
+          "processor": "Apple M3 Pro",
+          "ram": "18GB",
+          "storage": "512GB SSD"
+        },
+        "quantity": 1
+      }
+    ],
+    "total": 2499.99
+  },
+  {
+    "id": 11,
+    "timestamp": "2025-07-11T14:52:35.451850",
+    "items": [
+      {
+        "category": "Drones",
+        "description": "Drone compacto con cámara de 4K, peso inferior a 250g, y hasta 34 minutos de vuelo. Perfecto para fotografía aérea.",
+        "id": 10,
+        "image": "https://images.unsplash.com/photo-1579829366248-204fe8413f31?w=400&h=300&fit=crop",
+        "name": "DJI Mini 3 Pro",
+        "price": 759.99,
+        "specs": {
+          "camera": "4K/60fps",
+          "flight_time": "34 minutos",
+          "range": "12km",
+          "weight": "<250g",
+          "wind_resistance": "Nivel 5"
+        },
+        "quantity": 6
+      }
+    ],
+    "total": 4559.9400000000005
+  },
+  {
+    "id": 12,
+    "timestamp": "2025-07-11T14:52:36.651127",
+    "items": [
+      {
+        "category": "Drones",
+        "description": "Drone compacto con cámara de 4K, peso inferior a 250g, y hasta 34 minutos de vuelo. Perfecto para fotografía aérea.",
+        "id": 10,
+        "image": "https://images.unsplash.com/photo-1579829366248-204fe8413f31?w=400&h=300&fit=crop",
+        "name": "DJI Mini 3 Pro",
+        "price": 759.99,
+        "specs": {
+          "camera": "4K/60fps",
+          "flight_time": "34 minutos",
+          "range": "12km",
+          "weight": "<250g",
+          "wind_resistance": "Nivel 5"
+        },
+        "quantity": 6
+      }
+    ],
+    "total": 4559.9400000000005
+  },
+  {
+    "id": 13,
+    "timestamp": "2025-07-11T14:52:37.367530",
+    "items": [
+      {
+        "category": "Drones",
+        "description": "Drone compacto con cámara de 4K, peso inferior a 250g, y hasta 34 minutos de vuelo. Perfecto para fotografía aérea.",
+        "id": 10,
+        "image": "https://images.unsplash.com/photo-1579829366248-204fe8413f31?w=400&h=300&fit=crop",
+        "name": "DJI Mini 3 Pro",
+        "price": 759.99,
+        "specs": {
+          "camera": "4K/60fps",
+          "flight_time": "34 minutos",
+          "range": "12km",
+          "weight": "<250g",
+          "wind_resistance": "Nivel 5"
+        },
+        "quantity": 6
+      }
+    ],
+    "total": 4559.9400000000005
+  },
+  {
+    "id": 14,
+    "timestamp": "2025-07-11T14:54:58.599511",
+    "items": [
+      {
+        "category": "Smartphones",
+        "description": "El iPhone más avanzado con chip A17 Pro, cámara de 48MP, y diseño en titanio. Incluye Dynamic Island y carga inalámbrica.",
+        "id": 2,
+        "image": "https://images.unsplash.com/photo-1592750475338-74b7b21085ab?w=400&h=300&fit=crop",
+        "name": "iPhone 15 Pro Max",
+        "price": 1199.99,
+        "specs": {
+          "camera": "48MP Triple Camera",
+          "display": "6.7\" Super Retina XDR",
+          "processor": "Apple A17 Pro",
+          "ram": "8GB",
+          "storage": "256GB"
+        },
+        "quantity": 1
+      },
+      {
+        "category": "Audio",
+        "description": "Auriculares inalámbricos premium con cancelación de ruido líder en la industria. 30 horas de batería y sonido Hi-Res Audio.",
+        "id": 3,
+        "image": "https://images.unsplash.com/photo-1505740420928-5e560c06d30e?w=400&h=300&fit=crop",
+        "name": "Sony WH-1000XM5",
+        "price": 399.99,
+        "specs": {
+          "battery": "30 horas",
+          "connectivity": "Bluetooth 5.2",
+          "noise_cancellation": "Adaptive NC",
+          "type": "Over-ear",
+          "weight": "250g"
+        },
+        "quantity": 2
+      }
+    ],
+    "total": 1999.97
+  },
+  {
+    "id": 15,
+    "timestamp": "2025-07-11T15:31:46.392745",
+    "items": [
+      {
+        "category": "Smartphones",
+        "description": "El iPhone más avanzado con chip A17 Pro, cámara de 48MP, y diseño en titanio. Incluye Dynamic Island y carga inalámbrica.",
+        "id": 2,
+        "image": "https://images.unsplash.com/photo-1592750475338-74b7b21085ab?w=400&h=300&fit=crop",
+        "name": "iPhone 15 Pro Max",
+        "price": 4799960,
+        "specs": {
+          "camera": "48MP Triple Camera",
+          "display": "6.7\" Super Retina XDR",
+          "processor": "Apple A17 Pro",
+          "ram": "8GB",
+          "storage": "256GB"
+        },
+        "quantity": 1
+      }
+    ],
+    "total": 4799960
+  },
+  {
+    "id": 16,
+    "timestamp": "2025-07-11T15:42:02.983958",
+    "items": [
+      {
+        "category": "Smartphones",
+        "description": "El iPhone más avanzado con chip A17 Pro, cámara de 48MP, y diseño en titanio. Incluye Dynamic Island y carga inalámbrica.",
+        "id": 2,
+        "image": "https://images.unsplash.com/photo-1592750475338-74b7b21085ab?w=400&h=300&fit=crop",
+        "name": "iPhone 15 Pro Max",
+        "price": 4800000,
+        "specs": {
+          "camera": "48MP Triple Camera",
+          "display": "6.7\" Super Retina XDR",
+          "processor": "Apple A17 Pro",
+          "ram": "8GB",
+          "storage": "256GB"
+        },
+        "quantity": 3
+      }
+    ],
+    "total": 14400000
+  },
+  {
+    "id": 17,
+    "timestamp": "2025-07-11T15:42:04.732456",
+    "items": [
+      {
+        "category": "Smartphones",
+        "description": "El iPhone más avanzado con chip A17 Pro, cámara de 48MP, y diseño en titanio. Incluye Dynamic Island y carga inalámbrica.",
+        "id": 2,
+        "image": "https://images.unsplash.com/photo-1592750475338-74b7b21085ab?w=400&h=300&fit=crop",
+        "name": "iPhone 15 Pro Max",
+        "price": 4800000,
+        "specs": {
+          "camera": "48MP Triple Camera",
+          "display": "6.7\" Super Retina XDR",
+          "processor": "Apple A17 Pro",
+          "ram": "8GB",
+          "storage": "256GB"
+        },
+        "quantity": 3
+      }
+    ],
+    "total": 14400000
+  },
+  {
+    "id": 18,
+    "timestamp": "2025-07-11T15:52:29.314164",
+    "items": [
+      {
+        "category": "Fotografía",
+        "description": "Cámara mirrorless full-frame con sensor de 33MP, grabación 4K 60fps y estabilización de imagen de 5 ejes. Perfecta para fotografía profesional.",
+        "id": 5,
+        "image": "https://images.unsplash.com/photo-1516035069371-29a1b244cc32?w=400&h=300&fit=crop",
+        "name": "Sony A7 IV",
+        "price": 10000000,
+        "specs": {
+          "autofocus": "Real-time Eye AF",
+          "connectivity": "Wi-Fi 5GHz",
+          "sensor": "33MP Full-frame",
+          "stabilization": "5-axis IBIS",
+          "video": "4K 60fps"
+        },
+        "quantity": 1
+      }
+    ],
+    "total": 10000000
+  },
+  {
+    "id": 19,
+    "timestamp": "2025-07-11T16:26:35.210166",
+    "items": [
+      {
+        "category": "Smartphones",
+        "description": "El iPhone más avanzado con chip A17 Pro, cámara de 48MP, y diseño en titanio. Incluye Dynamic Island y carga inalámbrica.",
+        "id": 2,
+        "image": "https://images.unsplash.com/photo-1592750475338-74b7b21085ab?w=400&h=300&fit=crop",
+        "name": "iPhone 15 Pro Max",
+        "price": 4800000,
+        "specs": {
+          "camera": "48MP Triple Camera",
+          "display": "6.7\" Super Retina XDR",
+          "processor": "Apple A17 Pro",
+          "ram": "8GB",
+          "storage": "256GB"
+        },
+        "quantity": 3
+      },
+      {
+        "category": "Audio",
+        "description": "Auriculares inalámbricos premium con cancelación de ruido líder en la industria. 30 horas de batería y sonido Hi-Res Audio.",
+        "id": 3,
+        "image": "https://images.unsplash.com/photo-1505740420928-5e560c06d30e?w=400&h=300&fit=crop",
+        "name": "Sony WH-1000XM5",
+        "price": 1600000,
+        "specs": {
+          "battery": "30 horas",
+          "connectivity": "Bluetooth 5.2",
+          "noise_cancellation": "Adaptive NC",
+          "type": "Over-ear",
+          "weight": "250g"
+        },
+        "quantity": 4
+      }
+    ],
+    "total": 20800000
+  },
+  {
+    "id": 20,
+    "timestamp": "2025-07-11T18:14:48.539366",
+    "items": [
+      {
+        "category": "Laptops",
+        "description": "Potente laptop con chip M3 Pro, 18GB RAM, 512GB SSD. Perfecta para desarrollo y diseño profesional. Pantalla Liquid Retina XDR de 14 pulgadas.",
+        "id": 1,
+        "image": "https://images.unsplash.com/photo-1517336714731-489689fd1ca8?w=400&h=300&fit=crop",
+        "name": "MacBook Pro 14\" M3 Pro",
+        "price": 10000000,
+        "specs": {
+          "battery": "Hasta 22 horas",
+          "display": "14\" Liquid Retina XDR",
+          "processor": "Apple M3 Pro",
+          "ram": "18GB",
+          "storage": "512GB SSD"
+        },
+        "quantity": 3
+      }
+    ],
+    "total": 30000000
+  },
+  {
+    "id": 21,
+    "timestamp": "2025-07-11T19:06:18.530329",
+    "items": [
+      {
+        "category": "Laptops",
+        "description": "Potente laptop con chip M3 Pro, 18GB RAM, 512GB SSD. Perfecta para desarrollo y diseño profesional. Pantalla Liquid Retina XDR de 14 pulgadas.",
+        "id": 1,
+        "image": "https://images.unsplash.com/photo-1517336714731-489689fd1ca8?w=400&h=300&fit=crop",
+        "name": "MacBook Pro 14\" M3 Pro",
+        "price": 10000000,
+        "specs": {
+          "battery": "Hasta 22 horas",
+          "display": "14\" Liquid Retina XDR",
+          "processor": "Apple M3 Pro",
+          "ram": "18GB",
+          "storage": "512GB SSD"
+        },
+        "quantity": 1
+      },
+      {
+        "category": "Smartphones",
+        "description": "El iPhone más avanzado con chip A17 Pro, cámara de 48MP, y diseño en titanio. Incluye Dynamic Island y carga inalámbrica.",
+        "id": 2,
+        "image": "https://images.unsplash.com/photo-1592750475338-74b7b21085ab?w=400&h=300&fit=crop",
+        "name": "iPhone 15 Pro Max",
+        "price": 4800000,
+        "specs": {
+          "camera": "48MP Triple Camera",
+          "display": "6.7\" Super Retina XDR",
+          "processor": "Apple A17 Pro",
+          "ram": "8GB",
+          "storage": "256GB"
+        },
+        "quantity": 1
+      },
+      {
+        "category": "Audio",
+        "description": "Auriculares inalámbricos premium con cancelación de ruido líder en la industria. 30 horas de batería y sonido Hi-Res Audio.",
+        "id": 3,
+        "image": "https://images.unsplash.com/photo-1505740420928-5e560c06d30e?w=400&h=300&fit=crop",
+        "name": "Sony WH-1000XM5",
+        "price": 1600000,
+        "specs": {
+          "battery": "30 horas",
+          "connectivity": "Bluetooth 5.2",
+          "noise_cancellation": "Adaptive NC",
+          "type": "Over-ear",
+          "weight": "250g"
+        },
+        "quantity": 1
+      }
+    ],
+    "total": 16400000
+  }
+]

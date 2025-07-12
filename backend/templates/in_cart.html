@@ -1,0 +1,170 @@
+{% extends "base.html" %}
+
+{% block title %}Carrito - ShopMaster{% endblock %}
+
+{% block content %}
+<div class="fade-in">
+    <div class="row">
+        <div class="col-12">
+            <div class="d-flex justify-content-between align-items-center mb-4">
+                <h1 class="text-white">
+                    <i class="fas fa-shopping-bag me-2"></i>
+                    Carrito de Compras
+                </h1>
+                <a href="/" class="btn btn-outline-light">
+                    <i class="fas fa-arrow-left me-2"></i>
+                    Volver al Catálogo
+                </a>
+            </div>
+        </div>
+    </div>
+
+    {% if error %}
+    <div class="alert alert-danger" role="alert">
+        <i class="fas fa-exclamation-triangle me-2"></i>
+        {{ error }}
+    </div>
+    {% endif %}
+
+    {% if purchase %}
+        <!-- Información de la compra -->
+        <div class="card mb-4">
+            <div class="card-header bg-primary text-white">
+                <h5 class="mb-0">
+                    <i class="fas fa-receipt me-2"></i>
+                    Compra #{{ purchase.id }}
+                </h5>
+            </div>
+            <div class="card-body">
+                <div class="row">
+                    <div class="col-md-6">
+                        <p><strong>Fecha:</strong> {{ purchase.timestamp.split('T')[0] }}</p>
+                        <p><strong>Hora:</strong> {{ purchase.timestamp.split('T')[1].split('.')[0] }}</p>
+                    </div>
+                    <div class="col-md-6 text-md-end">
+                        <p><strong>Total de productos:</strong> {{ total_items }}</p>
+                        <p><strong>Total de la compra:</strong> 
+                            <span class="price-tag">${{ "%.2f"|format(purchase.total) }}</span>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Lista de productos -->
+        <div class="row">
+            {% for item in purchase.enriched_items %}
+            <div class="col-lg-6 col-xl-4 mb-4">
+                <div class="card h-100">
+                    <div class="card-body">
+                        <div class="row">
+                            <div class="col-4">
+                                <img src="{{ item.image }}" alt="{{ item.name }}" class="product-image">
+                            </div>
+                            <div class="col-8">
+                                <h6 class="card-title">{{ item.name }}</h6>
+                                <span class="category-badge">{{ item.category }}</span>
+                                <p class="card-text small text-muted mt-2">{{ item.description }}</p>
+                                
+                                <div class="d-flex justify-content-between align-items-center mt-3">
+                                    <div>
+                                        <span class="price-tag">${{ "%.2f"|format(item.price) }}</span>
+                                    </div>
+                                    <div class="text-end">
+                                        <span class="badge bg-secondary">Cantidad: {{ item.quantity }}</span>
+                                        <div class="mt-1">
+                                            <strong>Subtotal: ${{ "%.2f"|format(item.price * item.quantity) }}</strong>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            {% endfor %}
+        </div>
+
+        <!-- Resumen de la compra -->
+        <div class="card mt-4">
+            <div class="card-header bg-success text-white">
+                <h5 class="mb-0">
+                    <i class="fas fa-calculator me-2"></i>
+                    Resumen de la Compra
+                </h5>
+            </div>
+            <div class="card-body">
+                <div class="row">
+                    <div class="col-md-6">
+                        <h6>Productos en el carrito:</h6>
+                        <ul class="list-unstyled">
+                            {% for item in purchase.enriched_items %}
+                            <li class="mb-2">
+                                <i class="fas fa-check-circle text-success me-2"></i>
+                                {{ item.name }} (x{{ item.quantity }})
+                            </li>
+                            {% endfor %}
+                        </ul>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="text-end">
+                            <h6>Total de la compra:</h6>
+                            <div class="display-6 text-success fw-bold">
+                                ${{ "%.2f"|format(purchase.total) }}
+                            </div>
+                            <small class="text-muted">
+                                Incluye {{ total_items }} producto{{ 's' if total_items != 1 else '' }}
+                            </small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Botones de acción -->
+        <div class="row mt-4">
+            <div class="col-12 text-center">
+                <a href="/" class="btn btn-primary btn-lg me-3">
+                    <i class="fas fa-plus me-2"></i>
+                    Agregar Más Productos
+                </a>
+                <button class="btn btn-success btn-lg" onclick="alert('¡Gracias por tu compra! Esta es una simulación.')">
+                    <i class="fas fa-credit-card me-2"></i>
+                    Proceder al Pago
+                </button>
+            </div>
+        </div>
+
+    {% else %}
+        <!-- Carrito vacío -->
+        <div class="text-center py-5">
+            <div class="card">
+                <div class="card-body">
+                    <i class="fas fa-shopping-cart fa-5x text-muted mb-4"></i>
+                    <h3 class="text-muted">Tu carrito está vacío</h3>
+                    <p class="text-muted mb-4">
+                        No hay productos en tu carrito. ¡Explora nuestro catálogo y encuentra productos increíbles!
+                    </p>
+                    <a href="/" class="btn btn-primary btn-lg">
+                        <i class="fas fa-shopping-bag me-2"></i>
+                        Explorar Productos
+                    </a>
+                </div>
+            </div>
+        </div>
+    {% endif %}
+</div>
+{% endblock %}
+
+{% block extra_js %}
+<script>
+    // Animación de entrada para las tarjetas
+    document.addEventListener('DOMContentLoaded', function() {
+        const cards = document.querySelectorAll('.card');
+        cards.forEach((card, index) => {
+            card.style.animationDelay = `${index * 0.1}s`;
+            card.classList.add('fade-in');
+        });
+    });
+</script>
+{% endblock %} 
